@@ -19,7 +19,7 @@ int main(__attribute__((unused)) int ac, char **av)
 		command_counter++;
 		line = NULL;
 		size = 0;
-        panalysis_line(line, size, command_counter, av);
+	panalysis_line(line, size, command_counter, av);
 	} while (1);
 
 	return (0);
