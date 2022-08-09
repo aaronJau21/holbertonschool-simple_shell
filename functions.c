@@ -17,8 +17,10 @@ void panalysis_line(char *line, size_t size, int command_counter, char **av)
 	const char *delim = "\n\t ";
 
 	token_count = 0;
-	write(STDOUT_FILENO, PROMPT, str_len(PROMPT));
+	if (isatty(STDIN_FILENO) == 1)
+		write(STDOUT_FILENO, PROMPT, str_len(PROMPT));
 	read_len = getline(&line, &size, stdin);
+
 	if (read_len != -1)
 	{
 		param_array = token_interface(line, delim, token_count);

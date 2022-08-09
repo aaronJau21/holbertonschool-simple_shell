@@ -115,7 +115,7 @@ char *search_directories(char **path_tokens, char *command)
 		s = chdir(path_tokens[i]);
 		if (s == -1)
 		{
-			perror("ERROR!");
+			/* perror("ERROR!");*/
 			return (NULL);
 		}
 		s = stat(command, &stat_buf);
