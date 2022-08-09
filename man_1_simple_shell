@@ -23,3 +23,14 @@ Upon successful return, the shell will always return a 0 for success. If the she
 env - When entered, shell prints the current environment to standard output.
 .PP
 exit - When entered, shell exits out of the shell program.
+
+.SH FILES
+.I
+.SP
+$usr/bin/sh
+.I
+.sp
+/etc/profile
+.I
+.sp
+/root
